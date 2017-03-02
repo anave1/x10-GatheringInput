@@ -5,9 +5,10 @@
       <script lang="javascript">
         function getName(){
           var fullName;
-          fullName = document.getElementById("first").value;
+          var space = ' ';
+          fullName = document.getElementById("first").value + space +
+          document.getElementById("last").value;
           document.getElementById("message").innerHTML = fullName;
-
         }
       </script>
   </head>
